@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("This is a middle C.")
-        Image("trebleC4")
+        VStack {
+            Text("This is a middle C.")
+            Image("trebleC4")
+        }
+        
             .padding()
     }
 }
