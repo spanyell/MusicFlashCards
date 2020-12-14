@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B27D55B2583FC4800F42C24 /* UnrealmObjC in Frameworks */ = {isa = PBXBuildFile; productRef = 2B27D55A2583FC4800F42C24 /* UnrealmObjC */; };
-		2B27D55D2583FC4800F42C24 /* Unrealm in Frameworks */ = {isa = PBXBuildFile; productRef = 2B27D55C2583FC4800F42C24 /* Unrealm */; };
+		2B7523A52587ED67000A07FA /* UnrealmObjC in Frameworks */ = {isa = PBXBuildFile; productRef = 2B7523A42587ED67000A07FA /* UnrealmObjC */; };
+		2B7523A72587ED67000A07FA /* Unrealm in Frameworks */ = {isa = PBXBuildFile; productRef = 2B7523A62587ED67000A07FA /* Unrealm */; };
 		2B9ABEF625731BFF00291861 /* MusicFlashCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9ABEF525731BFF00291861 /* MusicFlashCardsApp.swift */; };
 		2B9ABEF825731BFF00291861 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9ABEF725731BFF00291861 /* ContentView.swift */; };
 		2B9ABEFA25731C0000291861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9ABEF925731C0000291861 /* Assets.xcassets */; };
@@ -54,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B27D55B2583FC4800F42C24 /* UnrealmObjC in Frameworks */,
-				2B27D55D2583FC4800F42C24 /* Unrealm in Frameworks */,
+				2B7523A52587ED67000A07FA /* UnrealmObjC in Frameworks */,
+				2B7523A72587ED67000A07FA /* Unrealm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +151,8 @@
 			);
 			name = MusicFlashCards;
 			packageProductDependencies = (
-				2B27D55A2583FC4800F42C24 /* UnrealmObjC */,
-				2B27D55C2583FC4800F42C24 /* Unrealm */,
+				2B7523A42587ED67000A07FA /* UnrealmObjC */,
+				2B7523A62587ED67000A07FA /* Unrealm */,
 			);
 			productName = MusicFlashCards;
 			productReference = 2B9ABEF225731BFF00291861 /* MusicFlashCards.app */;
@@ -226,7 +226,7 @@
 			);
 			mainGroup = 2B9ABEE925731BFF00291861;
 			packageReferences = (
-				2B27D5592583FC4800F42C24 /* XCRemoteSwiftPackageReference "Unrealm" */,
+				2B7523A32587ED67000A07FA /* XCRemoteSwiftPackageReference "Unrealm" */,
 			);
 			productRefGroup = 2B9ABEF325731BFF00291861 /* Products */;
 			projectDirPath = "";
@@ -593,25 +593,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2B27D5592583FC4800F42C24 /* XCRemoteSwiftPackageReference "Unrealm" */ = {
+		2B7523A32587ED67000A07FA /* XCRemoteSwiftPackageReference "Unrealm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/arturdev/Unrealm";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.3.5;
+				branch = SPM;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2B27D55A2583FC4800F42C24 /* UnrealmObjC */ = {
+		2B7523A42587ED67000A07FA /* UnrealmObjC */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2B27D5592583FC4800F42C24 /* XCRemoteSwiftPackageReference "Unrealm" */;
+			package = 2B7523A32587ED67000A07FA /* XCRemoteSwiftPackageReference "Unrealm" */;
 			productName = UnrealmObjC;
 		};
-		2B27D55C2583FC4800F42C24 /* Unrealm */ = {
+		2B7523A62587ED67000A07FA /* Unrealm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2B27D5592583FC4800F42C24 /* XCRemoteSwiftPackageReference "Unrealm" */;
+			package = 2B7523A32587ED67000A07FA /* XCRemoteSwiftPackageReference "Unrealm" */;
 			productName = Unrealm;
 		};
 /* End XCSwiftPackageProductDependency section */
