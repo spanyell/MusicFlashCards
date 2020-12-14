@@ -13,47 +13,51 @@ struct ContentView: View {
     
     
     var body: some View {
-        ZStack {
-            VStack {
-                Text("Question1")
-                Text("What is this note?")
-                Image("trebleC4")
-                    
-                ZStack {
-                    ButtonAnswer()
-                    Text("F")
+        VStack {
+            Text("Music Flash Cards")
+                .font(.headline)
+            ZStack {
+                VStack {
+                    Text("Question1")
+                    Text("What is this note?")
+                    Image("trebleC4")
+                        
+                    ZStack {
+                        ButtonAnswer()
+                        Text("F")
+                    }
+                    ZStack {
+                        ButtonAnswer()
+                        Text("E flat")
+                    }
+                    ZStack {
+                        ButtonAnswer()
+                        Text("G")
+                    }
+                    ZStack {
+                        ButtonAnswer()
+                            .onTapGesture {
+                                correctAnswer.toggle()
+                            }
+                        Text("Middle C")
+                    }
+                    ZStack {
+                        ButtonAnswer()
+                            .onTapGesture {
+                                incorrectAnswer.toggle()
+                            }
+                        Text("A sharp")
+                    }
                 }
-                ZStack {
-                    ButtonAnswer()
-                    Text("E flat")
-                }
-                ZStack {
-                    ButtonAnswer()
-                    Text("G")
-                }
-                ZStack {
-                    ButtonAnswer()
-                        .onTapGesture {
-                            correctAnswer.toggle()
-                        }
-                    Text("Middle C")
-                }
-                ZStack {
-                    ButtonAnswer()
-                        .onTapGesture {
-                            incorrectAnswer.toggle()
-                        }
-                    Text("A sharp")
-                }
+                CorrectAnswer()
+                    .offset(y: correctAnswer ? 0 : 600)
+                    .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+                
+                IncorrectAnswer()
+                    .offset(y: incorrectAnswer ? 0 : -600)
+                    .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+                
             }
-            CorrectAnswer()
-                .offset(y: correctAnswer ? 0 : 600)
-                .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-            
-            IncorrectAnswer()
-                .offset(y: incorrectAnswer ? 0 : -600)
-                .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-            
         }
     }
 }
