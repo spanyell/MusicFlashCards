@@ -21,9 +21,6 @@ struct ContentView: View {
                     
                 ZStack {
                     ButtonAnswer()
-                        .onTapGesture {
-                            incorrectAnswer.toggle()
-                        }
                     Text("F")
                 }
                 ZStack {
@@ -43,6 +40,9 @@ struct ContentView: View {
                 }
                 ZStack {
                     ButtonAnswer()
+                        .onTapGesture {
+                            incorrectAnswer.toggle()
+                        }
                     Text("A sharp")
                 }
             }
@@ -51,7 +51,7 @@ struct ContentView: View {
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
             
             IncorrectAnswer()
-                .offset(y: incorrectAnswer ? 0 : 600)
+                .offset(y: incorrectAnswer ? 0 : -600)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
             
         }
