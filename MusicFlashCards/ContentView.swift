@@ -95,6 +95,7 @@ struct FlashCard: View {
                 section.image
                     .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
                     .cornerRadius(5)
+                    .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 5)
                 
                 Spacer()
                 
