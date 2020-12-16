@@ -15,6 +15,7 @@
 		2B9ABEFD25731C0000291861 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9ABEFC25731C0000291861 /* Preview Assets.xcassets */; };
 		2B9ABF0825731C0100291861 /* MusicFlashCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9ABF0725731C0100291861 /* MusicFlashCardsTests.swift */; };
 		2B9ABF1325731C0100291861 /* MusicFlashCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9ABF1225731C0100291861 /* MusicFlashCardsUITests.swift */; };
+		2B9EC345258A7E7400A1DEFA /* CardFlip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9EC344258A7E7400A1DEFA /* CardFlip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2B9ABF0E25731C0100291861 /* MusicFlashCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicFlashCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B9ABF1225731C0100291861 /* MusicFlashCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFlashCardsUITests.swift; sourceTree = "<group>"; };
 		2B9ABF1425731C0100291861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B9EC344258A7E7400A1DEFA /* CardFlip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFlip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				2B9ABEF525731BFF00291861 /* MusicFlashCardsApp.swift */,
 				2B9ABEF725731BFF00291861 /* ContentView.swift */,
+				2B9EC344258A7E7400A1DEFA /* CardFlip.swift */,
 				2B9ABEF925731C0000291861 /* Assets.xcassets */,
 				2B9ABEFE25731C0000291861 /* Info.plist */,
 				2B9ABEFB25731C0000291861 /* Preview Content */,
@@ -272,6 +275,7 @@
 			files = (
 				2B9ABEF825731BFF00291861 /* ContentView.swift in Sources */,
 				2B9ABEF625731BFF00291861 /* MusicFlashCardsApp.swift in Sources */,
+				2B9EC345258A7E7400A1DEFA /* CardFlip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
