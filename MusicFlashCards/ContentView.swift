@@ -12,12 +12,15 @@ struct ContentView: View {
         VStack {
             Text("Music Flash Cards")
                 .font(.system(size: 28, weight: .bold))
+                .padding(.top)
                 Spacer ()
                 
             
-            ForEach(sectionData) { item in
-                FlashCard(section: item)
-        }
+            ScrollView(showsIndicators: false){
+                            ForEach(sectionData) { item in
+                                FlashCard(section: item)
+                            }
+                        }
     }
 }
 
@@ -53,7 +56,7 @@ struct IncorrectAnswer: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                .fill(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)), Color(#colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1))]), startPoint: .top, endPoint: .bottom))
+                .fill(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)), Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1))]), startPoint: .top, endPoint: .bottom))
                 .frame(width: 250, height: 300)
             Text("Nope.")
         }
@@ -172,3 +175,4 @@ struct FlashCard: View {
     }
 }
 }
+
